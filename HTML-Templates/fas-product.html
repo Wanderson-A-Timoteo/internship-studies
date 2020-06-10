@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+    <vtex:metaTags />
+    <vtex:template id="Fas-Head" />
+    <vtex.cmc:productRichSnippets showFacebook="1" showGoogle="1" />
+</head>
+<body>
+    <div id="main-wrapper">
+        <vtex:template id="Fas-Header" />
+        
+        <!-- Product images JavaScript "database" :( -->
+        <div class="hidden-element"><vtex.cmc:ProductImage /></div>
+        
+        <div id="content-wrapper">
+            <div class="product-wrapper-block block-wrapper">
+                <div class="top-half-wrapper">
+                    <div class="top-half vw-centered">
+                        <vtex.cmc:breadCrumb />
+                        
+                        <div class="product-name"><vtex.cmc:productName /></div>
+                        
+                        <div class="product-image">
+                            <div class="square-image preloading-image"><img /></div>
+                            <div class="wide-image preloading-image"><img /></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bottom-half-wrapper vw-centered">
+                    <div class="product-content">
+                        <div class="product-specs">
+                            <div class="product-specs-list"></div>
+                        </div>
+
+                        <div class="product-commerce-wrapper">
+                            <div class="product-commerce">
+                                <div class="product-prices">
+                                    <div class="top-group">
+                                        <div class="product-sku"><vtex.cmc:skuSelection /></div>
+                                        
+                                        <p class="product-price-from"></p>
+                                        <p class="product-price-to"></p>
+                                    </div>
+
+                                    <p class="product-price-sale-rate">Você ganhou <span></span>% de desconto!</p>
+                                </div>
+
+                                <div class="product-limited-offer"><div class="icon stopwatch-icon"></div> Oferta termina em 3 dias!</div>
+
+                                <div class="product-buy-button"><vtex.cmc:BuyButton /></div>
+
+                                <div class="product-popups">
+                                    <a href="javascript:void(0);" style="opacity: 0;">Tem cupom?</a>
+                                    <a href="javascript:void(0);" class="social-share-popup inline-popup-trigger" data-popup="#share-page-popup" data-share="page-url"><i class="fas fa-share"></i> Compartilhar com um amigo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .block-wrapper -->
+            
+            <div class="product-specs-block block-wrapper">
+                <div class="block-content vw-centered">
+                    <div class="product-specs-wrapper">
+                        <div id="product-details-tabs">
+                            <ul class="product-details-tabs-header">
+                                <li class="current"><a href="javascript:void(0);">Descrição</a></li>
+                            </ul>
+
+                            <div class="product-details-tabs-content writing-styles">
+                                <vtex.cmc:ProductDescription />
+                            </div>
+                        </div><!-- #product-details-tabs -->
+
+                        <div id="product-details-accordion">
+                            <h5 class="open">Descrição</h5>
+
+                            <div class="acc-descricao product-details-acc-content writing-styles">
+                                <vtex.cmc:ProductDescription />
+                            </div>
+                        </div><!-- #product-details-accordion -->
+                    </div>
+                </div>
+                
+                <div class="hidden-element"><vtex.cmc:productSpecification /></div>
+            </div><!-- .block-wrapper -->
+            
+            <div class="testemonials-shelf-block block-wrapper">
+                <div class="block-content vw-centered">
+                    <vtex:template id="Fas-Testemonials" />
+                </div>
+            </div><!-- .block-wrapper -->
+            
+            <div class="redux-shelf-block block-wrapper">
+                <div class="block-content vw-centered">
+                    <div class="products-shelf-wrapper redux-shelf swiper-shelf-root uniform-height" data-swiper-opts='{ "slidesPerGroup": 2, "breakpoints": { "400": { "slidesPerGroup": 1 } } }'>
+                        <div class="shelf-header">
+                            <div class="shelf-title">Cursos relacionados.</div>
+                        </div>
+                        
+                        <vtex:contentPlaceHolder id="Related-Products-Shelf" />
+                    </div>
+                </div>
+            </div><!-- .block-wrapper -->
+            
+            <div class="single-banner-block before-newsletter-banner block-wrapper with-shadow" style="display: none;">
+                <div class="block-content vw-centered">
+                    <vtex:contentPlaceHolder id="Single-Banner" />
+                </div>
+            </div><!-- .block-wrapper -->
+            
+            <vtex:template id="Fas-Newsletter-Block" />
+        </div><!-- #content-wrapper -->
+        
+        <vtex:template id="Fas-Footer" />
+    </div><!-- #main-wrapper -->
+    
+    <div id="contact-accept-popup" class="contact-accept-popup mfp-hide mfp-with-anim">
+        <div class="popup-content">
+            <div class="popup-title">Contrato Geral Faspec</div>
+
+            <div class="popup-contract-text">  
+                <p>A Faculdade de Ensino Superior Pelegrini Cipriani e a Instituição de Ensino Charles Babbage, mantidas pela ECuiabá Soluções para Interente Ltda-EPP pessoa jurídica de direito privado, inscrita no CNPJ sob n.º 05.026.955/0001­31, sito a avenida tenente coronel duarte, 397, centro, Cuiabá ­ Mato Grosso, 78005500, denominada CONTRATADA.</p>
+
+                <p>As partes acima qualificadas, com base nas Leis 8.079/1990, 9.394/1996 e demais legislação vigente aplicável, bem como pelos Estatutos e Regimentos da Instituição, pelo Calendário Acadêmico, pelas Tabelas de Valores, e por quaisquer outros atos administrativos complementares que venham a ser baixados pela CONTRATADA, constituindo-se parte integrante do presente, independentemente de transcrição, têm entre si, justo e contratado o presente contrato de prestação de serviços educacionais, regido pelas cláusulas e condições a seguir:</p>
+
+                <p><strong>CLÁUSULA PRIMEIRA</strong>: DO OBJETO: O presente contrato tem como objeto a prestação de SERVIÇOS EDUCACIONAIS À DISTÂNCIA (EAD) em favor do CONTRATANTE do Curso e Período indicado na qualificação acima.</p>
+
+                <p><strong>PARÁGRAFO PRIMEIRO</strong>: O planejamento e estruturação da prestação de serviços de ensino são de exclusiva responsabilidade da CONTRATADA, não estando sujeito à intervenção do CONTRATANTE, que deverá acatá-lo no todo, podendo a CONTRATADA alterá-la a qualquer tempo, inclusive no tocante à designação de corpo docente, fixação de datas e horários de avaliações, carga horária, aproveitamento de créditos, além de outras providências inerentes.</p>
+
+                <p><strong>PARÁGRAFO SEGUNDO</strong>: As aulas serão ministradas de forma online, devendo para tanto o CONTRATANTE comparecer nas instalações da CONTRATADA ou em locais que este indicar nos dias e horários informados para o mesmo, tendo em vista a natureza dos conteúdos e as técnicas pedagógicas que se fizerem necessárias, ressaltando inclusive que a CONTRATADA também poderá convocar o CONTRATANTE para, em horários contra turnos, bem como aos sábados e domingos, realizar atividades curriculares em laboratórios, aulas, estágios, visitas técnicas, monitoria, avaliações e outras que entender necessárias ao cumprimento da proposta pedagógica do curso, sem que isso importe em alteração do presente contrato.</p>
+
+                <p><strong>PARÁGRAFO TERCEIRO</strong>: A formalização do presente instrumento dar-se-á pela inexistência de débitos junto a CONTRATADA, bem como pela entrega da documentação exigível para entrada no Curso contratado, preenchimento e assinatura do CONTRATANTE no presente termo. Fica a CONTRATADA desobrigada a conceder ao CONTRATANTE, qualquer inscrição de curso caso o mesmo torne-se inadimplente ou cometa infrações à legislação escolar vigente ou ao Regimento Escolar.</p>
+
+                <p><strong>CLÁUSULA SEGUNDA</strong>: DA FORMALIZAÇÃO DA CONTRATAÇÃO E DOS DOCUMENTOS: No ato da formalização do presente termo, deverá o CONTRATANTE apresentar os seguintes documentos: certidão de nascimento e casamento, RG, CPF, título de eleitor (maiores de 18 anos), comprovante de residência, documento militar (para homens entre 18 e 45 anos), 02 fotos 3x4, atestado ou histórico escolar da última série cursada em que foi aprovado e histórico escolar da última série concluída, sendo que estes documentos deverão obrigatoriamente estar carimbados e assinados pelo Diretor e Secretário da Instituição.</p>
+
+                <p><strong>PARÁGRAFO PRIMEIRO</strong>: Caso o aluno beneficiário não possua histórico escolar deverá o mesmo realizar avaliações de escolaridade, que serão cobradas a parte pela CONTRATADA, não se aproveitando qualquer valor pago pelo presente Curso Contratado.</p>
+
+                <p><strong>PARÁGRAFO SEGUNDO</strong>: Em caso de se constatar, mesmo após a conclusão do curso pelo Acadêmico, o não atendimento das normas que regulam o ingresso no Curso contratado e/ou a irregularidade na documentação escolar apresentada pelo Acadêmico, nos termos da legislação vigente, a CONTRATADA suspenderá a participação do Acadêmico nas atividades acadêmicas, bem como não emitirá documentos oficiais, inclusive diplomas e certificados, até a completa regularização da documentação por parte do Acadêmico, podendo ainda a CONTRATADA tornar definitiva a suspensão mencionada, quando constatada a impossibilidade de regularização sem prejuízo das demais sanções cabíveis, nos termos deste instrumento, do Regimento Interno da MANTENEDORA e da legislação aplicável, ressaltando ainda que, o CONTRATANTE não terá direito à devolução de qualquer valor pago, tendo em vista que agiu com culpa exclusiva e a CONTRATADA prestou os respectivos serviços.</p>
+
+                <p><strong>CLÁUSULA TERCEIRA</strong>: DO PREÇO: Como contraprestação aos serviços prestados pela CONTRATADA, no curso e períodos especificados na qualificação acima, o CONTRATANTE pagará os valores descritos na Ficha Financeira no ANEXO I, que poderá ser pago à vista, ou em parcelas determinadas no mesmo documento, por mera liberalidade da CONTRATADA.</p>
+
+                <p><strong>PARÁGRAFO PRIMEIRO</strong>: Na opção de pagamento parcelado, o CONTRATANTE pagará a primeira parcela À VISTA, no ato da presente Contratação, e o saldo devedor de acordo com as parcelas descritas no ANEXO I.</p>
+
+                <p><strong>PARÁGRAFO SEGUNDO</strong>: Em caso de falta de pagamento no vencimento, o CONTRATANTE fica sujeito ao acréscimo de multa de 2% (dois por cento) e juros de 1% (um por cento) aos mês aplicando-se, ainda, correção monetária pelo INPC-IBGE, tudo sobre o valor integral de cada parcela vencida.</p>
+
+                <p><strong>PARÁGRAFO TERCEIRO</strong>: O atraso de qualquer valor faculta a CONTRATADA iniciar processo de cobrança extrajudicial ou judicial, podendo inclusive contratar empresa especializada para fazê-lo, ficando a cargo do CONTRATANTE o pagamento dos honorários advocatícios no percentual de 20% (vinte por cento), custas e emolumentos processuais, quando houver. O CONTRATANTE ainda autoriza a abertura de cadastro junto aos órgãos de defesa e proteção ao consumidor, em caso de inadimplemento das obrigações ora avençadas, estando ciente que a inadimplência configurada será de pronto informada ao Cadastro do Consumidor legalmente existente, nos termos do art. 43, §2º da Lei 8.078/1990, bem como será encaminhado para Cartório de Protesto de Títulos e Documentos, SPC e SERASA, sem que para isso seja necessário prévio aviso.</p>
+
+                <p><strong>PARÁGRAFO QUARTO</strong>: Os pagamentos das obrigações financeiras do CONTRATANTE comprovar-se-á mediante a apresentação dos recibos (boletos bancários) originais que individualizem a obrigação quitada, junto à rede bancária autorizada ou junto à tesouraria da CONTRATADA.</p>
+
+                <p><strong>PARÁGRAFO QUINTO</strong>: Caso o pagamento de qualquer parcela seja efetuado por meio de cheque, somente se efetivará após sua compensação bancária. Em caso de devolução pelo banco sacado do cheque destinado ao pagamento de qualquer parcela, por qualquer alínea, poderá a CONTRATADA rescindir o presente Instrumento sem qualquer aviso ou devolução de valores por ventura já paga pelo CONTRATANTE, bem como poderá tomar as providências cabíveis para o seu recebimento seja extrajudicial ou judicial.</p>
+
+                <p><strong>PARÁGRAFO SEXTO</strong>: O CONTRATANTE fica ciente que todo e qualquer valor pago pelo Curso Contratado, só poderá ser recebido pela CONTRATADA, a qual emitirá a respectiva Nota Fiscal dos serviços pagos. Caso o CONTRATANTE pague qualquer valor para terceiros, a CONTRATADA não poderá ser responsabilizada, bem como não dará qualquer quitação a que se refira o presente Instrumento.</p>
+
+                <p><strong>CLÁUSULA QUARTA</strong>: DAS AULAS, DO MATERIAL DIDÁTICO E DO PORTAL DO ALUNO: O não comparecimento, a ausência de entrada no portal de estudos, a não realização dos atos escolares como aulas presenciais ou telepresenciais, avaliações e outros atos determinados pela CONTRATADA, não exime o CONTRATANTE dos pagamentos previstos neste instrumento, tendo em vista a disponibilização dos serviços ora contratados.</p>
+
+                <p><strong>PARÁGRAFO PRIMEIRO</strong>: Os valores da contraprestação pactuados na Cláusula Terceira satisfazem única e exclusivamente a prestação de serviços decorrentes dos módulos constantes na Ficha de Crédito do curso, sendo que os custos dos serviços extraordinários prestados ao CONTRATANTE, tais como: fornecimento de livros didáticos, apostilas, declarações, certidões, adaptações, cursos paralelos, cursos de extensão, dependências, 2ª via de emissão de caderneta ou identidade escolar, requisição para prova substitutiva, certificados, transferência, emolumentos (como fotocópias de provas), multas por atraso em biblioteca e outros serviços requisitados pelo CONTRATANTE, ficarão a cargo exclusivo destes. Também não estão incluídos no valor do presente Instrumento os materiais de uso individual (como luvas, máscaras, jalecos, notebooks, tablets, etc.) do CONTRATANTE, necessários ao desenvolvimento das tarefas e atividades do curso, seja de natureza teórica ou prática.</p>
+
+                <p><strong>PARÁGRAFO SEGUNDO</strong>: As aulas referentes ao Curso contratado no presente instrumento, terão prazos determinados para o início e fim do mesmo, não podendo o CONTRATANTE alegar desconhecimento sobre referido período, findando portanto a obrigação da CONTRATADA para com o CONTRATANTE, na data fim descrita. Caso o aluno não tenha concluído o curso contratado, deverá procurar a TESOURARIA da CONTRATADA para fazer um aditivo contratual, a qual pagará novos valores para finalizar o curso contratado.</p>
+
+                <p><strong>PARÁGRAFO TERCEIRO</strong>: Estando a inscrição do CONTRATANTE de acordo com as condições do presente instrumento, o mesmo receberá através do e-mail cadastrado na Instituição, o "login" e "senha" para iniciar seus estudos, sendo que o material didático será disponibilizado dentro do portal do aluno. Caso o CONTRATANTE não entre no portal do aluno, não assista as aulas que estarão disponibilizadas para o mesmo, não frequente os encontros presenciais ou telepresenciais, não faça qualquer atividade acadêmica ou conclusiva, o mesmo concorda e está ciente que estará usufruindo dos serviços educacionais deste contrato até o último dia do Contrato ou até a entrega do Requerimento formal de solicitação de cancelamento do curso, não isentando o mesmo de qualquer pagamento.</p>
+
+                <p><strong>CLÁUSULA QUINTA</strong>: DO CANCELAMENTO DO CURSO: O CONTRATANTE fica ciente que estará usufruindo dos serviços educacionais deste contrato, mesmo quando não participar das aulas, teleaulas, do ambiente virtual ou evento educacional, contraindo débitos, até a data de entrega do requerimento de cancelamento do curso disponibilizado pela SECRETARIA DA INSTITUIÇÃO, ressaltando que não serão aceitos pedidos verbais, ocasião em que a parcela do mês a que se referia o pedido deverá estar paga, proporcional a prestação de serviços, ou caso o CONTRATANTE esteja inadimplente, fica o mesmo ciente que serão devidas todas as parcelas anteriores até o mês do pedido de cancelamento.</p>
+
+                <p><strong>PARÁGRAFO PRIMEIRO</strong>: Fica também acordado entre as partes que o CONTRATANTE poderá ser reembolsado em caso de cancelamento de matrícula, após formalização do requerimento acima descrito em 70% (setenta por cento) do valor devidamente pago, quando a formalização do pedido for realizada até a sétimo dia após a assinatura do presente termo. Após o prazo especificado acima a matrícula será cancelada sem a devolução de quaisquer valores, devendo o CONTRATANTE efetuar o pagamento do valor proporcional ao serviço prestado, ou seja, até a data do pedido de Cancelamento, sob pena de incorrer nas penalidades descritas na Cláusula Terceira, Parágrafo Terceiro.</p>
+
+                <p><strong>PARÁGRAFO SEGUNDO</strong>: Caso o CONTRATANTE tenha efetuado o pagamento através de Cartão de Crédito seja de forma parcelada ou à vista, a CONTRATADA efetuará a devolução do valor pago exclusivamente através do estorno realizado pela própria operadora do Cartão de Crédito, aplicando-se as condições estabelecidas no CAPUT do parágrafo primeiro. Não sendo possível efetuar o estorno de forma proporcional, a CONTRATADA encaminhará e-mail ao CONTRATANTE para que o mesmo informe os dados bancários para efetuar a devolução dos valores proporcionais, no prazo de até 30 (trinta) dias, a contar da data do recebimento do e-mail com os dados bancários.</p>
+
+                <p><strong>CLÁUSULA SEXTA</strong>: DA RESCISÃO: Dar-se-à a rescisão do presente contrato: I - por inadimplência do CONTRATANTE, verificada a qualquer tempo, referente a débitos de qualquer natureza, podendo a rescisão se dar imediatamente ou ao final do período contratado; II - por cancelamento ou transferência do CONTRATANTE, desde que seja solicitada de forma expressa, em documento escrito em que conste a sua assinatura, mediante protocolo no setor de atendimento da CONTRATADA; III - pelo desligamento do CONTRATANTE nos termos do Regimento Interno da CONTRATADA.</p>
+
+                <p><strong>PARÁGRAFO PRIMEIRO</strong>: Em qualquer caso, ocorrendo a rescisão contratual, o CONTRATANTE responde integralmente pelo débito vencido, apurado até o final do período contratado, que será requerido na forma estabelecida nos artigos 275, 389 e 475 do Código Civil, e devidamente acrescido dos encargos previstos no presente instrumento, além de custas processuais e honorários advocatícios.</p>
+
+                <p><strong>PARÁGRAFO SEGUNDO</strong>: Após a rescisão do contrato, ocorrerá a suspensão imediata da prestação dos respectivos serviços, ficando proibida a participação do CONTRATANTE nas atividades acadêmicas oferecidas pela CONTRATADA. O CONTRATANTE responsabiliza-se, exclusivamente, por qualquer constragimento em caso de descumprimento desta medida e ainda arcará com o pagamento referente às parcelas do período em que o CONTRATANTE utilizou da prestação de serviços, ainda que de forma indevida.</p>
+
+                <p><strong>CLÁUSULA SÉTIMA</strong>: DA CIÊNCIA DO CONTRATO: O CONTRATANTE, ao firmar este contrato, manifesta prévio conhecimento de suas cláusulas e livremente as aceita para todos os fins e efeitos, obrigando-se a respeitar as disposições legais, estatutárias, regimentais e normativas da CONTRATADA assumindo total responsabilidade por eventuais danos materiais ou morais causados pelo CONTRATANTE ao patrimônio da CONTRATADA, aos seus funcionários, demais alunos e terceiros, recebendo para tanto uma via do presente Instrumento. PARÁGRAFO ÚNICO: O CONTRATANTE se compromete a atender às convocações da CONTRATADA para tratar de questões de natureza acadêmica ou administrativa de interesse seu ou da CONTRATADA.</p>
+
+                <p><strong>CLÁUSULA OITAVA</strong>: DA AUTORIZAÇÃO EXPRESSA: O CONTRATANTE autoriza expressamente neste instrumento a utilização da imagem do CONTRATANTE para fins de divulgação da CONTRATADA, que poderá ser realizada por imagem e/ou voz oriunda de filmagens, fotografias ou qualquer outro meio, a título gratuito. Caso o CONTRATANTE não concorde com a divulgação da imagem do ALUNO, no termos do parágrafo anterior, deverá manifestar, de forma expressa.</p>
+
+                <p><strong>CLÁUSULA NONA</strong>: DAS ALTERAÇÕES CADASTRAIS E DOS AVISOS: As eventuais alterações de endereço residencial, comercial, local de trabalho, telefone, e-mails e demais dados constantes do cadastro original do CONTRATANTE deverá ser imediatamente comunicada por escrito a CONTRATADA, devidamente protocolado no setor de atendimento da Instituição.</p>
+
+                <p><strong>PARÁGRAFO PRIMEIRO</strong>: O não atendimento desta cláusula exime o CONTRATADO de qualquer responsabilidade por eventual prejuízo decorrente de qualquer natureza.</p>
+
+                <p><strong>PARÁGRAFO SEGUNDO</strong>: O CONTRATANTE concorda em receber avisos, notificações e cobranças por meio de mensagens eletrônicas, mensagens de aplicativos ou SMS nos endereços de e-mail e telefones indicados no preâmbulo deste, considerando-as válidas para todos os fins e efeitos.</p>
+
+                <p><strong>CLÁUSULA DÉCIMA</strong>: DA AUSÊNCIA DE RESPONSABILIDADE: A Instituição CONTRATADA não se responsabiliza pelos pertences trazidos ou esquecidos pelo CONTRATANTE no interior do estabelecimento de ensino ou em outros locais em que tenha havido o exercício de atividades extracurriculares, que não fazem parte do trato escolar como, por exemplo, celular, máquinas fotográficas, filmadoras, aparelhos de som, relógios, aparelhos ortodônticos, móveis e outros objetos, bem como não se obrigará a ressarcir extravios ou danos ocasionados em quaisquer desses objetos. O CONTRATANTE ainda fica ciente, que a CONTRATADA não presta qualquer tipo de serviço em relação a estacionamento, vigilância ou guarda de veículos automotores de quaisquer natureza, não assumindo, portanto para si, a responsabilidade de indenizações por danos, furtos, incêndios, atropelamentos, colisões, etc, que venham ocorrer nos pátios internos, externos, ou circunvizinhos de seu prédio, cuja responsabilidade será exclusivamente de seu condutor e/ou proprietário.</p>
+
+                <p><strong>CLÁUSULA DÉCIMA PRIMEIRA</strong>: DO DEVEDOR SOLIDÁRIO: Caso o CONTRATANTE seja menor de idade ao tempo da contratação, será devedor do presente contrato a pessoa que firmar o presente Instrumento, na qualidade de responsável financeiro/devedor solidário. Alcançada a maioridade do acadêmico, AMBOS passam a responder integralmente por todas as obrigações assumidas no presente, na condição de DEVEDORES SOLIDÁRIOS. Parágrafo Único - Nos termos do art. 275 e seguintes do Código Civil Brasileiro, o DEVEDOR SOLIDÁRIO assume, por si e/ou em solidariedade com o CONTRATANTE, todas as obrigações, encargos e cominações de natureza financeira decorrentes do presente Contrato, respondendo INTEGRALMENTE pelo pagamento dos valores devidos a CONTRATADA, arcando inclusive com todas as consequências advindas da inadimplência, estando ainda ciente que a responsabilidade solidária ora avençada perdurará até o final do CURSO, enquanto vigente o presente contrato, sendo inadmissível a exoneração.</p>
+
+                <p><strong>CLÁUSULA DÉCIMA SEGUNDA</strong>: DA SUCESSÃO: As partes obrigam-se por si e por seus herdeiros ou sucessores, ao integral cumprimento do presente contrato.</p>
+
+                <p><strong>CLÁUSULA DÉCIMA TERCEIRA</strong>: DO FORO: As partes, de comum cordo, elegem o foro da cidade e da comarca de Cuiabá, Estado do Mato Grosso, para dirimir quaisquer dúvidas ou litígios oriundos da execução ou inexecução deste contrato, renunciando a qualquer outro, por mais privilegiado que seja. Por estarem assim contratados, firmam o presente instrumento particular de prestação de serviços pelo aceite, para que produza os seus legais efeitos.</p>
+            </div>
+            
+            <div class="contract-buttons">
+                <a href="" class="contact-button" data-accept="true">Aceitar</a>
+                <a href="javascript:void(0);" class="contact-button" data-accept="false">Recusar</a>
+            </div>
+        </div>
+    </div><!-- #contact-accept-popup -->
+    
+    <vtex:template id="Fas-Scripts" />
+</body>
+</html>
