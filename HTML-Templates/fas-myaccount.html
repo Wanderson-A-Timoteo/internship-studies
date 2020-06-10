@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+    <vtex:contentPlaceHolder id="Custom-Page-Meta" />
+    <vtex:metaTags />
+    <vtex:template id="Fas-Head" />
+</head>
+<body>
+    <div id="main-wrapper">
+        <vtex:template id="Fas-Header" />
+        
+        <div id="content-wrapper">
+            <div class="content-page-block block-wrapper">
+                <div class="block-content vw-centered">
+                    <div class="page-content-wrapper">
+                        <vtex:template id="Fas-ContentPagesMenu" />
+                        
+                        <div class="page-content-column"><div class="content-wrapper"><iframe src="/account/iframe" id="orders-list-iframe"></iframe></div></div>
+                    </div>
+                </div>
+            </div><!-- .block-wrapper -->
+        </div><!-- #content-wrapper -->
+        
+        <vtex:template id="Fas-Footer" />
+    </div><!-- #main-wrapper -->
+    
+    <vtex:template id="Fas-Scripts" />
+</body>
+</html>

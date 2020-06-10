@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+    <vtex:metaTags />
+    
+    <style type="text/css">
+        .container { width: auto !important; }
+        h1.title, .page-header { margin-top: 0 !important; }
+    </style>
+</head>
+<body>
+    <div id="orders-list-if-wrapper"><vtex.cmc:accountUserProfile /></div>
+
+    <script>
+    window.setInterval( function() {
+        parent.postMessage( document.getElementById( 'orders-list-if-wrapper' ).scrollHeight, 'https://www.faspec.edu.br' );
+    }, 25 );
+    </script>
+</body>
+</html>
