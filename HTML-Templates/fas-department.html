@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+    <vtex:metaTags />
+    <vtex:template id="Fas-Head" />
+</head>
+<body>
+    <div id="main-wrapper">
+        <vtex:template id="Fas-Header" />
+        
+        <div class="department-main-banner">
+            <vtex:contentPlaceHolder id="Main-Banner" />
+        </div>
+        
+        <div id="content-wrapper">
+            <div class="bread-crumb-block block-wrapper">
+                <div class="block-content vw-fluid-centered">
+                    <vtex.cmc:breadCrumb />
+                </div>
+            </div><!-- .block-wrapper -->
+            
+            <div class="products-list-block block-wrapper">
+                <div class="block-content vw-fluid-centered">
+                    <div class="products-list-wrapper">
+                        <div class="products-list-sidebar">
+                            <div class="products-filters-wrapper">
+                                <vtex.cmc:searchNavigator />
+                            </div>
+
+                            <div class="filters-toggler"><div>VER FILTROS</div></div>
+                            
+                            <div class="products-list-sidebar-banners"><vtex:contentPlaceHolder id="Sidebar-Banners" /></div>
+                        </div>
+
+                        <div class="products-list-shelf">
+                            <div class="products-shelf-wrapper default-shelf uniform-height">
+                                <vtex.cmc:searchResult layout="19ccd66b-b568-43cb-a106-b52f9796f5cd" itemCount="12" columnCount="12" showUnavailable="true" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .block-wrapper -->
+            
+            <div class="single-banner-block before-newsletter-banner block-wrapper with-shadow">
+                <div class="block-content vw-centered">
+                    <vtex:contentPlaceHolder id="Single-Banner" />
+                </div>
+            </div><!-- .block-wrapper -->
+            
+            <vtex:template id="Fas-Newsletter-Block" />
+        </div><!-- #content-wrapper -->
+        
+        <vtex:template id="Fas-Footer" />
+    </div><!-- #main-wrapper -->
+    
+    <vtex:template id="Fas-Scripts" />
+</body>
+</html>
